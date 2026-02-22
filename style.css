@@ -1,0 +1,185 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body.best {
+  background: linear-gradient(to right, #fff5e6, #ffe0cc);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+nav.cool {
+  background: #b30000;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+}
+
+nav.cool ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav.cool ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav.cool ul li a:hover {
+  color: #ffd700;
+}
+
+
+section {
+  background: white;
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #b30000;
+}
+
+
+section img {
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+
+
+button {
+  background: #b30000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff6600;
+  transform: scale(1.05);
+}
+
+
+ol {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+ol > li {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #b30000;
+}
+
+ol ul {
+  margin-top: 5px;
+  margin-left: 20px;
+  list-style: circle;
+  font-weight: normal;
+  color: #333;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.grid-cell {
+  background: #ffcc99;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.grid-cell:hover {
+  background: #ff9966;
+  transform: scale(1.05);
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.flex-item {
+  background: #ffe6cc;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.flex-item:hover {
+  background: #ffcc99;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+
+  nav.cool ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  ol {
+    width: 90%;
+  }
+}
